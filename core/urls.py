@@ -23,6 +23,8 @@ from core import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.pages.urls', namespace='pages')),
+    path('', include('apps.recipes.urls', namespace='recipes')),
+    path('', include('apps.blogs.urls', namespace='blogs')),
 ]
 
 if settings.DEBUG:
